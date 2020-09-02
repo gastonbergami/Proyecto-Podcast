@@ -1,0 +1,28 @@
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 20px;
+  text-align: center;
+  font-family: IBM Plex Mono, monospace;
+  font-size: 14px;
+  color: #060A24;
+  letter-spacing: 0px;
+  line-height: 22px; }
+  footer .sociales {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; }
+    footer .sociales a {
+      color: black; }
+  @media (min-width: 1024px) {
+    footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      footer i {
+        padding-right: 20px; } }
+
+/*# sourceMappingURL=footer.css.map */

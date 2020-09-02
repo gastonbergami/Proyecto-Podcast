@@ -1,0 +1,100 @@
+.episode {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+
+    /*fondo azul*/
+
+    max-width: 100%;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    background-image: -webkit-linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    background-image: -o-linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    background-image: -moz-linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path:polygon(0% 3%, 100% 0%, 100% 90%, 0% 93%);
+    -webkit-clip-path:polygon(0% 3%, 100% 0%, 100% 90%, 0% 93%);
+    -ms-clip-path:polygon(0% 3%, 100% 0%, 100% 90%, 0% 93%);
+    -o-clip-path:polygon(0% 3%, 100% 0%, 100% 90%, 0% 93%);
+    -moz-clip-path:polygon(0% 3%, 100% 0%, 100% 90%, 0% 93%);
+    margin-top: 25px;
+    padding-bottom: 250px;
+    position: relative;
+    
+
+    .iframe {
+
+        width: 95%;
+        
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        
+        
+        
+         
+
+    }
+
+    iframe {
+        margin-bottom: 11px;
+        height: 155px;
+        border: none;
+       
+        
+    }
+    
+    h2 {
+
+        margin-top: 20%;
+        margin-left: 10px;
+        padding-bottom: 21px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        text-transform: unset;
+        font-size: 36px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        line-height: 42px;
+    }
+
+   
+    @media (min-width: 1024px) {
+
+        
+        clip-path:polygon(0% 10%, 130% 0%, 100% 85%, 0% 93%);
+        -webkit-clip-path:polygon(0% 10%, 130% 0%, 100% 85%, 0% 93%);
+        -ms-clip-path:polygon(0% 10%, 130% 0%, 100% 85%, 0% 93%);
+        -o-clip-path:polygon(0% 10%, 130% 0%, 100% 85%, 0% 93%);
+        -moz-clip-path:polygon(0% 10%, 130% 0%, 100% 85%, 0% 93%);
+
+        h2 {
+
+            margin-left: 14%;
+            width: 209px;
+            height: 62px;
+            font-size: 48px;
+        }
+
+        .iframe {
+
+                    
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: minmax(50px, auto);
+
+        }
+
+        iframe {
+
+            width: 75%;
+            height: 232px;
+            margin: 72px;
+            
+        }
+            
+    }
+
+    
+
+
+}

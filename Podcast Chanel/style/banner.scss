@@ -1,0 +1,86 @@
+.banner {
+
+    width: 100%;
+    position: relative;
+    
+    h1 {
+        font-family: IBM Plex Sans, sans-serif;
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        
+        margin-left: 10px;
+        padding-top: 29px;
+    
+
+        span{
+            color:  #0000EC;
+        }
+    }
+
+    p {
+
+        font-family: IBM Plex Sans, sans-serif;
+        font-size: 14px;
+        color: #060A24;
+        width: 95%;
+        letter-spacing: 2px;
+        line-height: 22px;
+        margin-left: 10px;
+        margin-top: 16px;
+    }
+
+    .buttonc {
+ 
+        
+        background: #00F3BB;
+        display: block;
+        font-family: IBM Plex Mono, monospace;
+        font-size: 16px;
+        color: black;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+
+        width: 95%;
+        height: 48px;
+        padding-top: 15px;
+        margin-top: 36px;
+        margin-left: 50%;
+        transform: translate(-50%);
+
+       
+        &:hover{
+            background: linear-gradient(to right, #00F3BB, #0000ff);
+            color: white;
+        }
+    }
+
+    
+    @media (min-width: 1024px) {
+
+       
+        left: 20%;
+        top: 50px;
+        h1{
+            font-size: 64px;   
+        }
+        p{
+            width: 628px;
+            height: 48px;
+        }
+
+        .buttonc {
+            
+            width:226px;
+            height: 56px;
+            margin-left: 20%;           
+        }      
+           
+    }
+    
+}
+
+
+

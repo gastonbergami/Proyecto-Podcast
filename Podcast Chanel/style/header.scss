@@ -1,0 +1,124 @@
+header {
+
+    
+    width: 100%;
+    height: 44px;
+    
+    .menu {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 16px;
+        font-weight: 400;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        line-height: 28px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 224px;
+        background: #0000EC;
+        transition: all 0.5s;
+        transform: translateX(-100%);
+        z-index: 3;
+   
+
+        a {
+
+            text-decoration: none;
+            color: white;
+            /*display: block;*/
+            padding: 15px;
+            
+            
+        }
+    }
+
+    .btn-menu {
+
+        display: none;
+        
+    }
+
+    label {
+
+        float: right;
+        margin: 10px;
+    }
+
+    .icon-cruz {
+        opacity: 0;
+    }
+
+    
+    img {
+        margin: 10px;
+    }
+
+    .btn-menu:checked ~ .menu {
+
+        transform: translateX(0%);
+        
+    }
+    .btn-menu:checked ~ .icon-cruz{
+
+        opacity: 1;
+        position: absolute;
+        right: 0;
+    }
+
+    .btn-menu:checked ~ .icon-burger {
+        opacity: 0;
+        
+    }
+
+    @media (min-width:1024px) {
+
+        display: flex;
+        justify-content: space-between;
+
+        img {
+
+            margin-left: 80px;
+            
+        }
+
+        .menu {
+    
+            position: relative;
+            width: auto;
+            height: 44px;
+            transform: translateX(0%);
+            display: flex; 
+            flex-direction: row;
+            top: 10px;
+            margin-right: 40px;
+            background: none;
+            
+            a {
+                color: black;
+                display: flex;
+                align-self: flex-end;
+
+                &:hover {
+
+                    color: #00F3BB;
+                    text-decoration: line-through;
+
+                }
+
+                &:active {
+
+                    color: rgba(6, 10, 36, 0.171);
+                }
+            }
+            
+        }
+
+        label {
+             display: none;
+        }
+    }
+}
+

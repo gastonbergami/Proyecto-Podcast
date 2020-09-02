@@ -1,0 +1,29 @@
+@import "header.scss"; 
+@import "banner.scss";
+@import "episode.scss";
+@import "celphone.scss";
+@import "ours.scss";
+@import "interview.scss";
+@import "thems.scss";
+@import "news.scss";
+@import "footer.scss";
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.contenedor {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+    
+    
